@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hexo+NexT搭建个人博客]]></title>
+    <url>%2Fbuilt-myblog%2F</url>
+    <content type="text"><![CDATA[Hexo+NexT搭建个人博客准备环境安装Git下载地址 安装Node.js下载地址 安装HexoHexo官方网站安装完Git和Node.js后，Git CMD下进行安装Hexo： 1npm install hexo-cli -g 初始化Hexo建立Hexo初始化文件夹，该路径下打开Git Bash运行以下命令： 12hexo initnpm install 初始化完成后，路径下自动生成以下的文件和文件夹： 12345678.├── _config.yml├── package.json├── scaffolds├── source| ├── _drafts| └── _posts└── themes 生成静态文件123hexo g# 或hexo generate 启动服务预览12345hexo s# 或hexo server# Debug模式hexo s --debug 部署部署前，首先需要在站点根目录下安装安装hexo-deployer-git 1npm install hexo-deployer-git --save 然后使用部署命令 1hexo g -d 清理1hexo clean 安装NexT主题下载NexT下载地址 安装NexT将下载的Next主题文件解压后，复制到theme文件夹下，文件夹命名为next，然后修改站点配置文件 hexo/_config.yml1theme: next 安装插件字数统计在站点根目录下安装 hexo-symbols-count-time 插件: 1npm install hexo-symbols-count-time --save 本地搜索在站点根目录下安装 hexo-generator-searchdb 插件: 1npm install hexo-generator-searchdb --save 在站点配置文件夹中加入如下配置： hexo/_config.yml12345search: path: search.xml field: post format: html limit: 10000 公式插件在站点根目录下安装 Mathjax 插件: 1npm un hexo-renderer-marked --save 图片浏览在主题根目录下安装 Fancybox 插件: 1git clone https://github.com/theme-next/theme-next-fancybox3 source/lib/fancybox 内容分享在主题根目录下安装 Needmoreshare2 插件: 1git clone https://github.com/theme-next/theme-next-needmoreshare2 source/lib/needsharebutton 背景动画在主题根目录下安装 Canvas-ribbon 插件: 1git clone https://github.com/theme-next/theme-next-canvas-ribbon source/lib/canvas-ribbon]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>技术</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[陋室铭—刘禹锡]]></title>
+    <url>%2Flou-shi-ming%2F</url>
+    <content type="text"><![CDATA[山不在高，有仙则名。水不在深，有龙则灵。斯是陋室，惟吾德馨。苔痕上阶绿，草色入帘青。谈笑有鸿儒，往来无白丁。可以调素琴，阅金经。无丝竹之乱耳，无案牍之劳形。南阳诸葛庐，西蜀子云亭。孔子云：“何陋之有？”]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+</search>
